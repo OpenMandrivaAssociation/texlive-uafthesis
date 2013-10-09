@@ -1,12 +1,12 @@
-# revision 22206
+# revision 29349
 # category Package
 # catalog-ctan /macros/latex/contrib/uafthesis
-# catalog-date 2011-04-25 19:25:49 +0200
+# catalog-date 2012-12-11 17:42:57 +0100
 # catalog-license lppl
-# catalog-version 5.0
+# catalog-version 12.12
 Name:		texlive-uafthesis
-Version:	5.0
-Release:	2
+Version:	12.12
+Release:	1
 Summary:	Document class for theses at University of Alaska Fairbanks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uafthesis
@@ -32,6 +32,7 @@ This is an "unofficial" official class.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/uafthesis/uafthesis.cls
+%doc %{_texmfdistdir}/doc/latex/uafthesis/Makefile
 %doc %{_texmfdistdir}/doc/latex/uafthesis/README.md
 %doc %{_texmfdistdir}/doc/latex/uafthesis/bib_styles/agufull08.bst
 %doc %{_texmfdistdir}/doc/latex/uafthesis/bib_styles/unsrtabbrv3.bst
@@ -43,9 +44,7 @@ This is an "unofficial" official class.
 %doc %{_texmfdistdir}/doc/latex/uafthesis/example/ch2.tex
 %doc %{_texmfdistdir}/doc/latex/uafthesis/example/ch3.tex
 %doc %{_texmfdistdir}/doc/latex/uafthesis/example/custom-macros.tex
-%doc %{_texmfdistdir}/doc/latex/uafthesis/example/example.bib
 %doc %{_texmfdistdir}/doc/latex/uafthesis/example/example.loa.bk
-%doc %{_texmfdistdir}/doc/latex/uafthesis/example/example.pdf
 %doc %{_texmfdistdir}/doc/latex/uafthesis/example/example.tex
 %doc %{_texmfdistdir}/doc/latex/uafthesis/example/example.toc.bk
 %doc %{_texmfdistdir}/doc/latex/uafthesis/example/fig/fivebatteries.png
@@ -61,16 +60,3 @@ This is an "unofficial" official class.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 5.0-2
-+ Revision: 757215
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 5.0-1
-+ Revision: 719829
-- texlive-uafthesis
-- texlive-uafthesis
-- texlive-uafthesis
-
