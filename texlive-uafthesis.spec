@@ -1,18 +1,12 @@
-# revision 29349
-# category Package
-# catalog-ctan /macros/latex/contrib/uafthesis
-# catalog-date 2012-12-11 17:42:57 +0100
-# catalog-license lppl
-# catalog-version 12.12
 Name:		texlive-uafthesis
-Version:	12.12
-Release:	10
+Version:	57349
+Release:	1
 Summary:	Document class for theses at University of Alaska Fairbanks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uafthesis
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uafthesis.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uafthesis.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uafthesis.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uafthesis.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -22,12 +16,12 @@ Requires(post):	texlive-kpathsea
 This is an "unofficial" official class.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -53,7 +47,7 @@ This is an "unofficial" official class.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
