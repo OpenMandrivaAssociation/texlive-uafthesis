@@ -1,6 +1,6 @@
 Name:		texlive-uafthesis
 Version:	57349
-Release:	1
+Release:	2
 Summary:	Document class for theses at University of Alaska Fairbanks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uafthesis
