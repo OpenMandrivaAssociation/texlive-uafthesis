@@ -3,7 +3,7 @@ Version:	57349
 Release:	2
 Summary:	Document class for theses at University of Alaska Fairbanks
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uafthesis
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/uafthesis
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uafthesis.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uafthesis.doc.r%{version}.tar.xz
